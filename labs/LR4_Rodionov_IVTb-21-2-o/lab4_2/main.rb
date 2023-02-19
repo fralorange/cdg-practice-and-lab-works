@@ -1,7 +1,8 @@
-require_relative "lab4_1"
+require_relative "../lab4_1"
 
-MAIN_NAME_PATH = "people.txt"
-RESULTS_NAME_PATH = "results.txt"
+MAIN_NAME_PATH = "lab4_2/people.txt" # такой путь если запускается из категории LR4_RODIONOV_ITVB-21-2-O
+#если запускать из категории lab4_2, то путь следует изменить на "people.txt"
+RESULTS_NAME_PATH = "lab4_2/results.txt" # тоже самое
 
 age = 0
 full = true
