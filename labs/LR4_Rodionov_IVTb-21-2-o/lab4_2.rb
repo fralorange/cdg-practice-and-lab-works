@@ -11,7 +11,7 @@ while ((age.to_i != -1) && full)
   age = gets.chomp
 
   peopleOfSameAge = where(MAIN_NAME_PATH, age)
-  next unless (File.exists?(RESULTS_NAME_PATH) && (File.readlines(RESULTS_NAME_PATH) & peopleOfSameAge)).empty?
+  (next unless (File.readlines(RESULTS_NAME_PATH) & peopleOfSameAge).empty?) if File.exists?(RESULTS_NAME_PATH)
 
   File.open(RESULTS_NAME_PATH, "a+") do |file|
     file.write(peopleOfSameAge.join)
