@@ -13,7 +13,7 @@ def array_x2(array)
 		return nil
 	end
 	
-	return array.reject { |e| !e.is_a?(Fixnum) }
+	return (array.reject { |e| !e.is_a?(Fixnum) }).map { |e| e * 2 } 
 end
 
 firstArr = []
